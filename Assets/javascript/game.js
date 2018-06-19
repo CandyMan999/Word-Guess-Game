@@ -139,9 +139,11 @@ document.addEventListener('keypress', (event) => {
         docRightGuess[0].innerHTML = rightLetter;
     // checks to see if user word matches guesses
         if (underScore.join('') == targetWord) {
-            setTimeout( () => {
-                alert('You Win Kawabonga BRAH!')
+                alert(targetWord + " Is Correct");
+                setTimeout( () => {
+                alert('You Win, Kawabonga BRAH!')
             }, 1000); 
+        
             wins++; 
             docWinsCounter.innerHTML = wins 
             randNum = Math.floor(Math.random() * wordList.length);
