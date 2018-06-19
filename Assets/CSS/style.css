@@ -1,0 +1,45 @@
+header {
+    border: 3px solid aqua;
+    height: 200px;
+    width: 80%;
+    font-size: 40px;
+    text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 50px auto;
+     
+}
+
+.underScore {
+    border: 3px solid aqua;
+    height: 150px;
+    width: 80%;
+    font-size: 80px;
+    text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 50px auto;
+
+}
+
+.rightGuess {
+    border: 3px solid aqua;
+    height: 150px;
+    width: 80%;
+    font-size: 80px;
+    text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 50px auto;
+    color: greenyellow;
+
+}
+
+.wrongGuess {
+    border: 3px solid aqua;
+    height: 150px;
+    width: 80%;
+    font-size: 80px;
+    text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 50px auto;
+    color: red;
+
+}
