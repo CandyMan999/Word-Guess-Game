@@ -37,7 +37,8 @@
 
 
 //create an array of words
-const wordList = ["bananas", "maui", "surf", "coconut", "palm", "beach", "waves", "dolphin", "turtle", "aloha"];
+const wordList = ["bananas", "maui", "surfing", "coconut", "palm", "beach", "waves", "dolphin", "turtle", "aloha"];
+
 
 //choose word randomly
     let randNum = Math.floor(Math.random() * wordList.length);
@@ -65,10 +66,44 @@ let generateUnderscore = () => {
     let nonMut = [];
     for (let i = 0; i < targetWord.length; i++) {
         nonMut.push('_');
-
-    }
+      }
     return nonMut;
 }
+if (targetWord == "bananas") {
+    alert("I grow on a tree!");
+}
+if (targetWord == "maui") {
+    alert("I am an island!");
+}
+if (targetWord == "surfing") {
+    alert("I am sport of the gods");
+}
+if (targetWord == "coconut") {
+    alert("I am the other white nut!");
+}
+if (targetWord == "palm") {
+    alert("I am the the tree of your dreams!");
+}
+if (targetWord == "beach") {
+    alert("Life should be a ______!");
+}
+if (targetWord == "waves") {
+    alert("I am the music in your ears!");
+}
+if (targetWord == "dolphin") {
+    alert("I am the fish who you can never catch!");
+}
+if (targetWord == "turtle") {
+    alert("I am natures surfer!");
+}
+if (targetWord == "aloha") {
+    alert("I am a tropical greeting!");
+}
+
+
+
+
+
 console.log(underScore);
 underScore = generateUnderscore();
 console.log(underScore);
@@ -116,18 +151,93 @@ document.addEventListener('keypress', (event) => {
             wrongLetter = [];
             GuessesLeft = 5;
             docUnderScore[0].innerHTML = underScore.join(' ');
-            
-        }
+            docRightGuess[0].innerHTML = rightLetter;
+            docWrongGuess[0].innerHTML = wrongLetter;
+            docGuessCounter.innerHTML = GuessesLeft;
         
-        //add to wrongLetter array
-      
-    }
+            
+           if (targetWord == "bananas") {
+                setTimeout( () => {
+                alert("I grow on a tree!")
+                }, 2000); 
+            }
+        
+            
+          
+            if (targetWord == "maui") {
+                 setTimeout( () => {
+                 alert("I am an island!")
+                }, 2000); 
+            }
+          
+            if (targetWord == "surfing") {
+                 setTimeout( () => {
+                 alert("I am the sport of the gods!")
+                }, 2000); 
+            }    
+           
+            if (targetWord == "coconut") {
+                setTimeout( () => {
+                alert("I am the other white nut!")
+                }, 2000); 
+            }    
+                
+                
+            
+            if (targetWord == "palm") {
+                setTimeout( () => {
+                alert("I am the the tree of your dreams!")
+                }, 2000); 
+            }    
+               
+               
+       
+            if (targetWord == "beach") {
+                setTimeout( () => {
+                alert("Life should be a ______!")
+                }, 2000); 
+            }    
+               
+     
+         
+            if (targetWord == "waves") {
+                setTimeout( () => {
+                alert("I am the music in your ears!")
+                }, 2000); 
+            }    
+                
+           
+            if (targetWord == "dolphin") {
+                setTimeout( () => {
+                alert("I am the fish who you can never catch!")
+                }, 2000); 
+             }    
+              
+              
+            
+            if (targetWord == "turtle") {
+                setTimeout( () => {
+                alert("I am natures surfer!")
+                }, 2000); 
+            }    
+               
+               
+    
+            if (targetWord == "aloha") {
+               setTimeout( () => {
+               alert("I am a tropical greeting!")
+               }, 2000); 
+            }
+        }
+        //add to wrong letter array
+    }   
     else {
         wrongLetter.push(keyPress);
         docWrongGuess[0].innerHTML = wrongLetter;
         GuessesLeft--;
         docGuessCounter.innerHTML = GuessesLeft;
         if (GuessesLeft == 0) {
+            alert('You LOSE, BUMMER BROsph!');
             losses++;
             docLossesCounter.innerHTML = losses;
             randNum = Math.floor(Math.random() * wordList.length);
@@ -136,14 +246,90 @@ document.addEventListener('keypress', (event) => {
             rightLetter = [];
             wrongLetter = [];
             GuessesLeft = 5;
-            docUnderScore[0].innerHTML = underScore.join(' ')
+            docUnderScore[0].innerHTML = underScore.join(' ');
+            docRightGuess[0].innerHTML = rightLetter;
+            docWrongGuess[0].innerHTML = wrongLetter;
+            docGuessCounter.innerHTML = GuessesLeft;
+            if (targetWord == "bananas") {
+                setTimeout( () => {
+                alert("I grow on a tree!")
+                }, 2000); 
+            }
+        
             
+          
+            if (targetWord == "maui") {
+                 setTimeout( () => {
+                 alert("I am an island!")
+                }, 2000); 
+            }
+          
+            if (targetWord == "surfing") {
+                 setTimeout( () => {
+                 alert("I am the sport of the gods!")
+                }, 2000); 
+            }    
+           
+            if (targetWord == "coconut") {
+                setTimeout( () => {
+                alert("I am the other white nut!")
+                }, 2000); 
+            }    
+                
+                
+            
+            if (targetWord == "palm") {
+                setTimeout( () => {
+                alert("I am the the tree of your dreams!")
+                }, 2000); 
+            }    
+               
+               
+       
+            if (targetWord == "beach") {
+                setTimeout( () => {
+                alert("Life should be a ______!")
+                }, 2000); 
+            }    
+               
+     
+         
+            if (targetWord == "waves") {
+                setTimeout( () => {
+                alert("I am the music in your ears!")
+                }, 2000); 
+            }    
+                
+           
+            if (targetWord == "dolphin") {
+                setTimeout( () => {
+                alert("I am the fish who you can never catch!")
+                }, 2000); 
+             }    
+              
+              
+            
+            if (targetWord == "turtle") {
+                setTimeout( () => {
+                alert("I am natures surfer!")
+                }, 2000); 
+            }    
+               
+               
+    
+            if (targetWord == "aloha") {
+               setTimeout( () => {
+               alert("I am a tropical greeting!")
+               }, 2000); 
+            }
+            
+        }
 
             //update html guesses left
             //also the right and wrong letter array
         }
     console.log(wrongLetter);
-    }
+    
 
     
 });
